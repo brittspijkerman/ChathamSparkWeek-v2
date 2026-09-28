@@ -1,0 +1,999 @@
+{
+  "metadata": {
+    "pack_id": "project_09_trip_planning_v1",
+    "schema_version": "1.0.0",
+    "source_pack_id": "shared_relationship_v1",
+    "generated_at": "2026-09-10T00:00:00.000Z",
+    "synthetic": true,
+    "disclaimer": "All people, organizations, properties, economics, and events in this pack are fictional workshop data."
+  },
+  "trip_scenarios": [
+    {
+      "id": "trip_scenario_01",
+      "name": "Plan a Denver client trip (Synthetic)",
+      "mode": "plan_new",
+      "city": "Denver",
+      "timezone": "America/Denver",
+      "start_date": "2026-10-13",
+      "end_date": "2026-10-14",
+      "meeting_ids": [
+        "trip_meeting_01",
+        "trip_meeting_02",
+        "trip_meeting_03",
+        "trip_meeting_04",
+        "trip_meeting_05",
+        "trip_meeting_06",
+        "trip_meeting_07"
+      ]
+    },
+    {
+      "id": "trip_scenario_02",
+      "name": "Coordinate an existing Charlotte trip (Synthetic)",
+      "mode": "coordinate_existing",
+      "city": "Charlotte",
+      "timezone": "America/New_York",
+      "start_date": "2026-10-21",
+      "end_date": "2026-10-21",
+      "meeting_ids": [
+        "trip_meeting_08",
+        "trip_meeting_09",
+        "trip_meeting_10",
+        "trip_meeting_11",
+        "trip_meeting_12"
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "id": "client_01",
+      "name": "Copper Ridge Communities (Synthetic)",
+      "industry": "Residential real estate",
+      "headquarters_city": "Denver",
+      "headquarters_state": "CO",
+      "relationship_health": "strong",
+      "preferred_contact_cadence": "Quarterly",
+      "relationship_owner_employee_id": "employee_01",
+      "synthetic": true
+    },
+    {
+      "id": "client_02",
+      "name": "Harborstone Logistics Partners (Synthetic)",
+      "industry": "Industrial real estate",
+      "headquarters_city": "Chicago",
+      "headquarters_state": "IL",
+      "relationship_health": "developing",
+      "preferred_contact_cadence": "Monthly",
+      "relationship_owner_employee_id": "employee_02",
+      "synthetic": true
+    },
+    {
+      "id": "client_03",
+      "name": "Juniper Gate Capital (Synthetic)",
+      "industry": "Real estate investment",
+      "headquarters_city": "New York",
+      "headquarters_state": "NY",
+      "relationship_health": "at_risk",
+      "preferred_contact_cadence": "As needed",
+      "relationship_owner_employee_id": "employee_03",
+      "synthetic": true
+    },
+    {
+      "id": "client_04",
+      "name": "Mesa Verde Hospitality Group (Synthetic)",
+      "industry": "Hospitality",
+      "headquarters_city": "Phoenix",
+      "headquarters_state": "AZ",
+      "relationship_health": "strong",
+      "preferred_contact_cadence": "Monthly",
+      "relationship_owner_employee_id": "employee_04",
+      "synthetic": true
+    },
+    {
+      "id": "client_05",
+      "name": "Alder Creek Industrial (Synthetic)",
+      "industry": "Industrial real estate",
+      "headquarters_city": "Dallas",
+      "headquarters_state": "TX",
+      "relationship_health": "developing",
+      "preferred_contact_cadence": "Quarterly",
+      "relationship_owner_employee_id": "employee_05",
+      "synthetic": true
+    },
+    {
+      "id": "client_06",
+      "name": "Northline Residential (Synthetic)",
+      "industry": "Multifamily real estate",
+      "headquarters_city": "Charlotte",
+      "headquarters_state": "NC",
+      "relationship_health": "strong",
+      "preferred_contact_cadence": "Monthly",
+      "relationship_owner_employee_id": "employee_06",
+      "synthetic": true
+    },
+    {
+      "id": "client_07",
+      "name": "Beacon Yard Investments (Synthetic)",
+      "industry": "Commercial real estate",
+      "headquarters_city": "Boston",
+      "headquarters_state": "MA",
+      "relationship_health": "developing",
+      "preferred_contact_cadence": "Quarterly",
+      "relationship_owner_employee_id": "employee_07",
+      "synthetic": true
+    },
+    {
+      "id": "client_08",
+      "name": "Silver Fern Data Properties (Synthetic)",
+      "industry": "Data centers",
+      "headquarters_city": "Seattle",
+      "headquarters_state": "WA",
+      "relationship_health": "at_risk",
+      "preferred_contact_cadence": "Monthly",
+      "relationship_owner_employee_id": "employee_08",
+      "synthetic": true
+    }
+  ],
+  "contacts": [
+    {
+      "id": "contact_01",
+      "client_id": "client_01",
+      "name": "Maya Stone",
+      "title": "Chief Financial Officer",
+      "email": "maya.stone@workshop.example",
+      "city": "Denver",
+      "state": "CO",
+      "preferred_channel": "Email",
+      "synthetic": true
+    },
+    {
+      "id": "contact_04",
+      "client_id": "client_02",
+      "name": "Caleb Frost",
+      "title": "Chief Financial Officer",
+      "email": "caleb.frost@workshop.example",
+      "city": "Chicago",
+      "state": "IL",
+      "preferred_channel": "Email",
+      "synthetic": true
+    },
+    {
+      "id": "contact_06",
+      "client_id": "client_03",
+      "name": "Owen Hale",
+      "title": "Chief Financial Officer",
+      "email": "owen.hale@workshop.example",
+      "city": "New York",
+      "state": "NY",
+      "preferred_channel": "Email",
+      "synthetic": true
+    },
+    {
+      "id": "contact_09",
+      "client_id": "client_04",
+      "name": "Priya Shah",
+      "title": "Chief Financial Officer",
+      "email": "priya.shah@workshop.example",
+      "city": "Phoenix",
+      "state": "AZ",
+      "preferred_channel": "Email",
+      "synthetic": true
+    },
+    {
+      "id": "contact_11",
+      "client_id": "client_05",
+      "name": "Leah Grant",
+      "title": "Chief Financial Officer",
+      "email": "leah.grant@workshop.example",
+      "city": "Dallas",
+      "state": "TX",
+      "preferred_channel": "Email",
+      "synthetic": true
+    },
+    {
+      "id": "contact_13",
+      "client_id": "client_06",
+      "name": "Sofia Lane",
+      "title": "Chief Financial Officer",
+      "email": "sofia.lane@workshop.example",
+      "city": "Charlotte",
+      "state": "NC",
+      "preferred_channel": "Email",
+      "synthetic": true
+    },
+    {
+      "id": "contact_16",
+      "client_id": "client_07",
+      "name": "Noah Quinn",
+      "title": "Chief Financial Officer",
+      "email": "noah.quinn@workshop.example",
+      "city": "Boston",
+      "state": "MA",
+      "preferred_channel": "Email",
+      "synthetic": true
+    },
+    {
+      "id": "contact_18",
+      "client_id": "client_08",
+      "name": "Theo Marsh",
+      "title": "Chief Financial Officer",
+      "email": "theo.marsh@workshop.example",
+      "city": "Seattle",
+      "state": "WA",
+      "preferred_channel": "Email",
+      "synthetic": true
+    }
+  ],
+  "employees": [
+    {
+      "id": "employee_01",
+      "name": "Jordan Avery",
+      "title": "Relationship Manager",
+      "team": "Real Estate Advisory",
+      "office": "Denver",
+      "email": "jordan.avery@workshop.example",
+      "synthetic": true
+    },
+    {
+      "id": "employee_02",
+      "name": "Morgan Ellis",
+      "title": "Relationship Manager",
+      "team": "Financial Risk Advisory",
+      "office": "Denver",
+      "email": "morgan.ellis@workshop.example",
+      "synthetic": true
+    },
+    {
+      "id": "employee_03",
+      "name": "Casey Rowan",
+      "title": "Relationship Manager",
+      "team": "Real Estate Advisory",
+      "office": "New York",
+      "email": "casey.rowan@workshop.example",
+      "synthetic": true
+    },
+    {
+      "id": "employee_04",
+      "name": "Taylor Blake",
+      "title": "Advisor",
+      "team": "Financial Risk Advisory",
+      "office": "Charlotte",
+      "email": "taylor.blake@workshop.example",
+      "synthetic": true
+    },
+    {
+      "id": "employee_05",
+      "name": "Avery Monroe",
+      "title": "Advisor",
+      "team": "Real Estate Advisory",
+      "office": "Denver",
+      "email": "avery.monroe@workshop.example",
+      "synthetic": true
+    },
+    {
+      "id": "employee_06",
+      "name": "Riley Cameron",
+      "title": "Advisor",
+      "team": "Financial Risk Advisory",
+      "office": "London",
+      "email": "riley.cameron@workshop.example",
+      "synthetic": true
+    },
+    {
+      "id": "employee_07",
+      "name": "Quinn Sawyer",
+      "title": "Advisor",
+      "team": "Real Estate Advisory",
+      "office": "Singapore",
+      "email": "quinn.sawyer@workshop.example",
+      "synthetic": true
+    },
+    {
+      "id": "employee_08",
+      "name": "Parker Reese",
+      "title": "Advisor",
+      "team": "Financial Risk Advisory",
+      "office": "Boston",
+      "email": "parker.reese@workshop.example",
+      "synthetic": true
+    }
+  ],
+  "locations": [
+    {
+      "id": "location_01",
+      "name": "Denver Advisory Office (Synthetic)",
+      "address": "101 Example Plaza",
+      "city": "Denver",
+      "state": "CO",
+      "timezone": "America/Denver",
+      "latitude": 39.7501,
+      "longitude": -104.9992,
+      "synthetic": true
+    },
+    {
+      "id": "location_02",
+      "name": "Union Station Meeting Center (Synthetic)",
+      "address": "122 Sample Street",
+      "city": "Denver",
+      "state": "CO",
+      "timezone": "America/Denver",
+      "latitude": 39.7527,
+      "longitude": -105.0008,
+      "synthetic": true
+    },
+    {
+      "id": "location_03",
+      "name": "Cherry Creek Conference Center (Synthetic)",
+      "address": "233 Fictional Avenue",
+      "city": "Denver",
+      "state": "CO",
+      "timezone": "America/Denver",
+      "latitude": 39.7181,
+      "longitude": -104.9535,
+      "synthetic": true
+    },
+    {
+      "id": "location_04",
+      "name": "RiNo Client Office (Synthetic)",
+      "address": "344 Workshop Way",
+      "city": "Denver",
+      "state": "CO",
+      "timezone": "America/Denver",
+      "latitude": 39.7697,
+      "longitude": -104.9726,
+      "synthetic": true
+    },
+    {
+      "id": "location_05",
+      "name": "Denver Airport Hotel (Synthetic)",
+      "address": "455 Practice Road",
+      "city": "Denver",
+      "state": "CO",
+      "timezone": "America/Denver",
+      "latitude": 39.8238,
+      "longitude": -104.7733,
+      "synthetic": true
+    },
+    {
+      "id": "location_06",
+      "name": "Charlotte Advisory Office (Synthetic)",
+      "address": "201 Example Square",
+      "city": "Charlotte",
+      "state": "NC",
+      "timezone": "America/New_York",
+      "latitude": 35.2274,
+      "longitude": -80.8432,
+      "synthetic": true
+    },
+    {
+      "id": "location_07",
+      "name": "South End Meeting Center (Synthetic)",
+      "address": "312 Sample Boulevard",
+      "city": "Charlotte",
+      "state": "NC",
+      "timezone": "America/New_York",
+      "latitude": 35.2163,
+      "longitude": -80.8574,
+      "synthetic": true
+    },
+    {
+      "id": "location_08",
+      "name": "SouthPark Client Office (Synthetic)",
+      "address": "423 Fictional Lane",
+      "city": "Charlotte",
+      "state": "NC",
+      "timezone": "America/New_York",
+      "latitude": 35.1515,
+      "longitude": -80.8386,
+      "synthetic": true
+    },
+    {
+      "id": "location_09",
+      "name": "University City Conference Center (Synthetic)",
+      "address": "534 Workshop Drive",
+      "city": "Charlotte",
+      "state": "NC",
+      "timezone": "America/New_York",
+      "latitude": 35.3071,
+      "longitude": -80.7358,
+      "synthetic": true
+    }
+  ],
+  "meetings": [
+    {
+      "id": "trip_meeting_01",
+      "trip_scenario_id": "trip_scenario_01",
+      "client_id": "client_01",
+      "contact_ids": [
+        "contact_01"
+      ],
+      "employee_ids": [
+        "employee_01"
+      ],
+      "location_id": "location_01",
+      "subject": "Portfolio and maturity review (Synthetic)",
+      "duration_minutes": 60,
+      "scheduled_start_at": null,
+      "preparation_notes": "Review the debt schedule and identify maturities that need follow-up.",
+      "client_name": "Copper Ridge Communities (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_02",
+      "trip_scenario_id": "trip_scenario_01",
+      "client_id": "client_03",
+      "contact_ids": [
+        "contact_06"
+      ],
+      "employee_ids": [
+        "employee_03"
+      ],
+      "location_id": "location_02",
+      "subject": "Acquisition financing discussion (Synthetic)",
+      "duration_minutes": 45,
+      "scheduled_start_at": null,
+      "preparation_notes": "Bring the latest acquisition assumptions and lender questions.",
+      "client_name": "Juniper Gate Capital (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_03",
+      "trip_scenario_id": "trip_scenario_01",
+      "client_id": "client_06",
+      "contact_ids": [
+        "contact_13"
+      ],
+      "employee_ids": [
+        "employee_06"
+      ],
+      "location_id": "location_03",
+      "subject": "Hedging policy workshop (Synthetic)",
+      "duration_minutes": 60,
+      "scheduled_start_at": null,
+      "preparation_notes": "Prepare a concise comparison of policy alternatives.",
+      "client_name": "Northline Residential (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_04",
+      "trip_scenario_id": "trip_scenario_01",
+      "client_id": "client_02",
+      "contact_ids": [
+        "contact_04"
+      ],
+      "employee_ids": [
+        "employee_02"
+      ],
+      "location_id": "location_04",
+      "subject": "Quarterly relationship check-in (Synthetic)",
+      "duration_minutes": 45,
+      "scheduled_start_at": null,
+      "preparation_notes": "Review open requests and recent transaction activity.",
+      "client_name": "Harborstone Logistics Partners (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_05",
+      "trip_scenario_id": "trip_scenario_01",
+      "client_id": "client_08",
+      "contact_ids": [
+        "contact_18"
+      ],
+      "employee_ids": [
+        "employee_08"
+      ],
+      "location_id": "location_05",
+      "subject": "Data-center expansion planning (Synthetic)",
+      "duration_minutes": 60,
+      "scheduled_start_at": null,
+      "preparation_notes": "Confirm the expected financing timeline and decision-makers.",
+      "client_name": "Silver Fern Data Properties (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_06",
+      "trip_scenario_id": "trip_scenario_01",
+      "client_id": "client_05",
+      "contact_ids": [
+        "contact_11"
+      ],
+      "employee_ids": [
+        "employee_05"
+      ],
+      "location_id": "location_03",
+      "subject": "Cap replacement discussion (Synthetic)",
+      "duration_minutes": 30,
+      "scheduled_start_at": null,
+      "preparation_notes": "Review the current cap maturity and potential replacement timing.",
+      "client_name": "Alder Creek Industrial (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_07",
+      "trip_scenario_id": "trip_scenario_01",
+      "client_id": "client_07",
+      "contact_ids": [
+        "contact_16"
+      ],
+      "employee_ids": [
+        "employee_07"
+      ],
+      "location_id": "location_02",
+      "subject": "Service opportunity review (Synthetic)",
+      "duration_minutes": 45,
+      "scheduled_start_at": null,
+      "preparation_notes": "Bring a short summary of related portfolio needs.",
+      "client_name": "Beacon Yard Investments (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_08",
+      "trip_scenario_id": "trip_scenario_02",
+      "client_id": "client_06",
+      "contact_ids": [
+        "contact_13"
+      ],
+      "employee_ids": [
+        "employee_06"
+      ],
+      "location_id": "location_06",
+      "subject": "Existing-trip kickoff (Synthetic)",
+      "duration_minutes": 60,
+      "scheduled_start_at": "2026-10-21T09:00:00-04:00",
+      "preparation_notes": "Confirm the day's priorities and owner for itinerary changes.",
+      "client_name": "Northline Residential (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_09",
+      "trip_scenario_id": "trip_scenario_02",
+      "client_id": "client_01",
+      "contact_ids": [
+        "contact_01"
+      ],
+      "employee_ids": [
+        "employee_01"
+      ],
+      "location_id": "location_07",
+      "subject": "Capital plan update (Synthetic)",
+      "duration_minutes": 45,
+      "scheduled_start_at": "2026-10-21T10:00:00-04:00",
+      "preparation_notes": "Review the current financing pipeline.",
+      "client_name": "Copper Ridge Communities (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_10",
+      "trip_scenario_id": "trip_scenario_02",
+      "client_id": "client_04",
+      "contact_ids": [
+        "contact_09"
+      ],
+      "employee_ids": [
+        "employee_04"
+      ],
+      "location_id": "location_08",
+      "subject": "Rate-cap renewal planning (Synthetic)",
+      "duration_minutes": 60,
+      "scheduled_start_at": "2026-10-21T12:00:00-04:00",
+      "preparation_notes": "Bring current cap terms and an extension timeline.",
+      "client_name": "Mesa Verde Hospitality Group (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_11",
+      "trip_scenario_id": "trip_scenario_02",
+      "client_id": "client_02",
+      "contact_ids": [
+        "contact_04"
+      ],
+      "employee_ids": [
+        "employee_02"
+      ],
+      "location_id": "location_09",
+      "subject": "Lender proposal preparation (Synthetic)",
+      "duration_minutes": 45,
+      "scheduled_start_at": "2026-10-21T14:30:00-04:00",
+      "preparation_notes": "Confirm proposal deadlines and comparison priorities.",
+      "client_name": "Harborstone Logistics Partners (Synthetic)",
+      "synthetic": true
+    },
+    {
+      "id": "trip_meeting_12",
+      "trip_scenario_id": "trip_scenario_02",
+      "client_id": "client_07",
+      "contact_ids": [
+        "contact_16"
+      ],
+      "employee_ids": [
+        "employee_07"
+      ],
+      "location_id": "location_06",
+      "subject": "Trip closeout and next steps (Synthetic)",
+      "duration_minutes": 30,
+      "scheduled_start_at": "2026-10-21T17:00:00-04:00",
+      "preparation_notes": "Capture commitments before the team departs.",
+      "client_name": "Beacon Yard Investments (Synthetic)",
+      "synthetic": true
+    }
+  ],
+  "availability_windows": [
+    {
+      "id": "availability_01",
+      "meeting_id": "trip_meeting_01",
+      "start_at": "2026-10-13T08:30:00-06:00",
+      "end_at": "2026-10-13T17:30:00-06:00",
+      "preference": "Morning preferred"
+    },
+    {
+      "id": "availability_02",
+      "meeting_id": "trip_meeting_02",
+      "start_at": "2026-10-13T08:30:00-06:00",
+      "end_at": "2026-10-13T17:30:00-06:00",
+      "preference": "Afternoon preferred"
+    },
+    {
+      "id": "availability_03",
+      "meeting_id": "trip_meeting_03",
+      "start_at": "2026-10-13T08:30:00-06:00",
+      "end_at": "2026-10-13T17:30:00-06:00",
+      "preference": "Flexible"
+    },
+    {
+      "id": "availability_04",
+      "meeting_id": "trip_meeting_04",
+      "start_at": "2026-10-13T08:30:00-06:00",
+      "end_at": "2026-10-13T17:30:00-06:00",
+      "preference": "Morning preferred"
+    },
+    {
+      "id": "availability_05",
+      "meeting_id": "trip_meeting_05",
+      "start_at": "2026-10-14T08:30:00-06:00",
+      "end_at": "2026-10-14T17:30:00-06:00",
+      "preference": "Afternoon preferred"
+    },
+    {
+      "id": "availability_06",
+      "meeting_id": "trip_meeting_06",
+      "start_at": "2026-10-14T08:30:00-06:00",
+      "end_at": "2026-10-14T17:30:00-06:00",
+      "preference": "Flexible"
+    },
+    {
+      "id": "availability_07",
+      "meeting_id": "trip_meeting_07",
+      "start_at": "2026-10-14T08:30:00-06:00",
+      "end_at": "2026-10-14T17:30:00-06:00",
+      "preference": "Morning preferred"
+    },
+    {
+      "id": "availability_08",
+      "meeting_id": "trip_meeting_08",
+      "start_at": "2026-10-21T08:30:00-04:00",
+      "end_at": "2026-10-21T17:30:00-04:00",
+      "preference": "Afternoon preferred"
+    },
+    {
+      "id": "availability_09",
+      "meeting_id": "trip_meeting_09",
+      "start_at": "2026-10-21T08:30:00-04:00",
+      "end_at": "2026-10-21T17:30:00-04:00",
+      "preference": "Flexible"
+    },
+    {
+      "id": "availability_10",
+      "meeting_id": "trip_meeting_10",
+      "start_at": "2026-10-21T08:30:00-04:00",
+      "end_at": "2026-10-21T17:30:00-04:00",
+      "preference": "Morning preferred"
+    },
+    {
+      "id": "availability_11",
+      "meeting_id": "trip_meeting_11",
+      "start_at": "2026-10-21T08:30:00-04:00",
+      "end_at": "2026-10-21T17:30:00-04:00",
+      "preference": "Afternoon preferred"
+    },
+    {
+      "id": "availability_12",
+      "meeting_id": "trip_meeting_12",
+      "start_at": "2026-10-21T08:30:00-04:00",
+      "end_at": "2026-10-21T17:30:00-04:00",
+      "preference": "Flexible"
+    }
+  ],
+  "travel_times": [
+    {
+      "id": "travel_01_02",
+      "from_location_id": "location_01",
+      "to_location_id": "location_02",
+      "mode": "drive",
+      "minutes": 10,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_01_03",
+      "from_location_id": "location_01",
+      "to_location_id": "location_03",
+      "mode": "drive",
+      "minutes": 20,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_01_04",
+      "from_location_id": "location_01",
+      "to_location_id": "location_04",
+      "mode": "drive",
+      "minutes": 15,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_01_05",
+      "from_location_id": "location_01",
+      "to_location_id": "location_05",
+      "mode": "drive",
+      "minutes": 45,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_02_01",
+      "from_location_id": "location_02",
+      "to_location_id": "location_01",
+      "mode": "drive",
+      "minutes": 15,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_02_03",
+      "from_location_id": "location_02",
+      "to_location_id": "location_03",
+      "mode": "drive",
+      "minutes": 20,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_02_04",
+      "from_location_id": "location_02",
+      "to_location_id": "location_04",
+      "mode": "drive",
+      "minutes": 15,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_02_05",
+      "from_location_id": "location_02",
+      "to_location_id": "location_05",
+      "mode": "drive",
+      "minutes": 45,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_03_01",
+      "from_location_id": "location_03",
+      "to_location_id": "location_01",
+      "mode": "drive",
+      "minutes": 20,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_03_02",
+      "from_location_id": "location_03",
+      "to_location_id": "location_02",
+      "mode": "drive",
+      "minutes": 20,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_03_04",
+      "from_location_id": "location_03",
+      "to_location_id": "location_04",
+      "mode": "drive",
+      "minutes": 20,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_03_05",
+      "from_location_id": "location_03",
+      "to_location_id": "location_05",
+      "mode": "drive",
+      "minutes": 40,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_04_01",
+      "from_location_id": "location_04",
+      "to_location_id": "location_01",
+      "mode": "drive",
+      "minutes": 15,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_04_02",
+      "from_location_id": "location_04",
+      "to_location_id": "location_02",
+      "mode": "drive",
+      "minutes": 15,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_04_03",
+      "from_location_id": "location_04",
+      "to_location_id": "location_03",
+      "mode": "drive",
+      "minutes": 20,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_04_05",
+      "from_location_id": "location_04",
+      "to_location_id": "location_05",
+      "mode": "drive",
+      "minutes": 40,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_05_01",
+      "from_location_id": "location_05",
+      "to_location_id": "location_01",
+      "mode": "drive",
+      "minutes": 45,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_05_02",
+      "from_location_id": "location_05",
+      "to_location_id": "location_02",
+      "mode": "drive",
+      "minutes": 45,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_05_03",
+      "from_location_id": "location_05",
+      "to_location_id": "location_03",
+      "mode": "drive",
+      "minutes": 45,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_05_04",
+      "from_location_id": "location_05",
+      "to_location_id": "location_04",
+      "mode": "drive",
+      "minutes": 40,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_06_07",
+      "from_location_id": "location_06",
+      "to_location_id": "location_07",
+      "mode": "drive",
+      "minutes": 15,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_06_08",
+      "from_location_id": "location_06",
+      "to_location_id": "location_08",
+      "mode": "drive",
+      "minutes": 25,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_06_09",
+      "from_location_id": "location_06",
+      "to_location_id": "location_09",
+      "mode": "drive",
+      "minutes": 30,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_07_06",
+      "from_location_id": "location_07",
+      "to_location_id": "location_06",
+      "mode": "drive",
+      "minutes": 15,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_07_08",
+      "from_location_id": "location_07",
+      "to_location_id": "location_08",
+      "mode": "drive",
+      "minutes": 25,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_07_09",
+      "from_location_id": "location_07",
+      "to_location_id": "location_09",
+      "mode": "drive",
+      "minutes": 35,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_08_06",
+      "from_location_id": "location_08",
+      "to_location_id": "location_06",
+      "mode": "drive",
+      "minutes": 25,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_08_07",
+      "from_location_id": "location_08",
+      "to_location_id": "location_07",
+      "mode": "drive",
+      "minutes": 25,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_08_09",
+      "from_location_id": "location_08",
+      "to_location_id": "location_09",
+      "mode": "drive",
+      "minutes": 45,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_09_06",
+      "from_location_id": "location_09",
+      "to_location_id": "location_06",
+      "mode": "drive",
+      "minutes": 30,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_09_07",
+      "from_location_id": "location_09",
+      "to_location_id": "location_07",
+      "mode": "drive",
+      "minutes": 35,
+      "source": "Synthetic deterministic estimate"
+    },
+    {
+      "id": "travel_09_08",
+      "from_location_id": "location_09",
+      "to_location_id": "location_08",
+      "mode": "drive",
+      "minutes": 40,
+      "source": "Synthetic deterministic estimate"
+    }
+  ],
+  "verification_cases": [
+    {
+      "id": "verification_feasible_denver",
+      "description": "Enough time exists between three Denver meetings.",
+      "stops": [
+        {
+          "meeting_id": "trip_meeting_01",
+          "start_at": "2026-10-13T09:00:00-06:00"
+        },
+        {
+          "meeting_id": "trip_meeting_02",
+          "start_at": "2026-10-13T10:30:00-06:00"
+        },
+        {
+          "meeting_id": "trip_meeting_03",
+          "start_at": "2026-10-13T12:00:00-06:00"
+        }
+      ],
+      "expected_conflict_count": 0
+    },
+    {
+      "id": "verification_conflict_charlotte",
+      "description": "The second Charlotte meeting starts when the first ends, leaving no travel time.",
+      "stops": [
+        {
+          "meeting_id": "trip_meeting_08",
+          "start_at": "2026-10-21T09:00:00-04:00"
+        },
+        {
+          "meeting_id": "trip_meeting_09",
+          "start_at": "2026-10-21T10:00:00-04:00"
+        }
+      ],
+      "expected_conflict_count": 1
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "bundleVersion": "2.7.0",
+  "generatedOn": "2026-09-28",
+  "syntheticParticipantBundle": true,
+  "project": {
+    "key": "project_09",
+    "name": "Meeting and Trip Itinerary Planner",
+    "category": "Planning and coordination",
+    "teamSize": 3
+  },
+  "target": {
+    "mode": "create_or_resume_team_app",
+    "environment": "production",
+    "clientRecordAccess": "none"
+  },
+  "install": {
+    "frontendLibraries": [],
+    "optionalFrontendLibraries": [],
+    "connectors": [],
+    "jobs": [
+      {
+        "name": "calculate_itinerary",
+        "source": "jobs/calculate_itinerary.js",
+        "enabled": true,
+        "jobType": "sync",
+        "clientInvokable": true,
+        "concurrencyPolicy": "parallel"
+      }
+    ],
+    "optionalJobs": [],
+    "webResearch": null
+  },
+  "contents": {
+    "dataDirectories": [
+      "data/project-09-meeting-trip-mapper"
+    ],
+    "documents": [],
+    "frontendEntry": "frontend/app.jsx",
+    "smokeTests": "references/smoke-tests.md",
+    "startHere": "START-HERE.md",
+    "frontendUtilities": [],
+    "projectBrief": "references/project-brief.md",
+    "setupGuide": "references/vibes-setup.md",
+    "workshopGuide": "references/workshop-guide.md",
+    "workshopStart": "references/workshop-start.md",
+    "toolingAccess": "references/ai-tooling-access.md",
+    "technicalGuide": "references/technical-guide.md",
+    "presentationGuide": "references/presentation-deliverable.md",
+    "extractionGuide": null,
+    "marketRateGuide": null,
+    "frameworkGuide": "references/project-framework.md",
+    "teamCard": "references/team-card.md",
+    "workshopGrill": "skills/grill-me-workshop/SKILL.md",
+    "visualDesignGuide": "references/visual-design.md",
+    "reactPrototypeGuide": "references/react-prototyping.md",
+    "aiAndAutomationGuide": "references/ai-and-automation.md",
+    "localPrototype": "prototype/App.jsx",
+    "projectReviewRecord": "references/project-review-record.md",
+    "projectLogGuidance": "references/project-log-guidance.md",
+    "submissionPackageGuide": "references/submission-package.md",
+    "submissionPackager": "scripts/prepare-submission.py"
+  },
+  "replacesDownloads": [
+    "project-09-meeting-trip-mapper-data-v1.zip"
+  ],
+  "boundaries": {
+    "masterAppRuntimeDependency": false,
+    "otherVibesAppRuntimeDependency": false,
+    "evaluatorDataIncluded": false,
+    "realClientDataIncluded": false,
+    "realGeographicDataIncluded": true
+  },
+  "dataComposition": "Synthetic business fixtures; separately licensed real OpenStreetMap geographic extracts."
+}

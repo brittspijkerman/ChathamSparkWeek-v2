@@ -1,0 +1,10 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { spawnSync } = require('node:child_process');
+const esbuild = require('esbuild');
+const root = __dirname;
+fs.mkdirSync(path.join(root, 'preview'), { recursive: true });
+esbuild.buildSync({entryPoints:[path.join(root,'main.jsx')], bundle:true, minify:true, legalComments:'eof', outfile:path.join(root,'preview/app.js'), define:{'process.env.NODE_ENV':'"production"'}});
+const result = spawnSync(process.execPath, [require.resolve('tailwindcss/lib/cli.js'),'--input',path.join(root,'input.css'),'--output',path.join(root,'preview/style.css'),'--content',path.join(root,'App.jsx'),'--minify'], {stdio:'inherit', windowsHide:true});
+if(result.status !== 0) process.exit(result.status || 1);
+console.log('Built local React preview. Refresh the browser.');
